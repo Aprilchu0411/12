@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - U3</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/final.styles.css" asp-append-version="true" />
+    <link href="~/Shared/_layout.cshtml.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+</head>
+<body>
+    <header>
+        <div id="home"></div>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light custom-navbar border-bottom box-shadow bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img src="~/imgs/1123.png" alt="Logo" width="180" height="50" class="d-inline-block align-text-top img-fluid">
+                </a>
+                
+                <div class="navbar-collapse collapse d-sm-inline-flex">
+                    <div class="container-fluid d-flex">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item me-6">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">公司介紹</a>
+                                </li>
+                                <li class="nav-item dropdown me-6">
+                                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        實習生
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item text-black" href="/Chu/A">褚宥辰</a></li>
+                                        <li><a class="dropdown-item text-black" href="/Jane/A1">陳儀蓁</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="home_menu">
+            <div id="scroll_menu">
+                <a href="/#home" class="btn " data-toggle="tooltip" title="" data-original-title="Home"><i class="fa fa-home"></i></a><br>
+                <a href="/#slider" class="btn " data-toggle="tooltip" title="" data-original-title="Slider"><i class="fa fa-light fa-sitemap me-1"></i></a><br>
+                <a href="/#service" class="btn " data-toggle="tooltip" title="" data-original-title="Service"><i class="fa-brands fa-yelp"></i></a><br>
+                <a href="/#contact" class="btn " data-toggle="tooltip" title="" data-original-title="Contact"><i class="fa-solid fa-user"></i></a><br>
+                <a href="/#blog" class="btn" data-toggle="tooltip" title="" data-original-title="Blog"><i class="fa fa-book"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+
+    <footer class="border-top footer text-muted">
+        
+        <div class="footerbg-hex5c4b51">
+            <div class="container text-white">
+            &copy; 2024 
+            </div>
+        </div>
+    </footer>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

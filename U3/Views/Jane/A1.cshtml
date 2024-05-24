@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "A1";
+}
+@{
+    int id = Convert.ToInt32(ViewContext.HttpContext.Request.RouteValues["id"]);
+
+}
+<div class="container">
+<img src="~/imgs/inner-banner-taiwanese-download.jpg" style="width: 100%; display: block; margin: 0 auto;" alt="內部橫幅 - 台灣下載" />
+</div>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-2 mt-3 text-center">
+            <a type="button" class="active link-bgcolor  text-white fw-bolder px-4 py-2 mb-2 rounded-pill border border-3   text-decoration-none mb-1 text-black" href="/Jane/A1">工作內容</a>
+            <a type="button" class=" link-bgcolor  text-white fw-bolder px-4 py-2 mb-2 rounded-pill border border-3  text-decoration-none mb-1 text-black" href="/Jane/A2">&emsp;學習&emsp;</a>
+            <a type="button" class="link-bgcolor  text-white fw-bolder px-4 py-2 mb-1 rounded-pill border border-3   text-decoration-none mb-1 text-black" href="/Jane/A3">心得感想</a>
+
+        </div>
+        <div class="col-8">
+            <div data-bs-spy="scroll" data-bs-target="navbar-example" data-bs-offset="0" class="scrollspy-example  p-3" tabindex="0">
+                <div id="item1">
+                    <p class="h5 mb-4 bg-warning-subtles fw-bold title-styleA1 p-2">一、工作環境</p>
+                    <br />
+                    <p class="content-bgcolorA1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的工作地點是精誠集團—宜誠資訊，地理位置位在台北市松山區復興北路369號3樓，距離中山國中捷運站五分鐘路程，也有很多公車可以抵達，所以交通方面滿多元的算方便，至於生活機能部分，附近也有很多餐廳小吃，所以飲食方面也不成問題相當便捷。上班時間是8:30 ~ 9:30，有一個小時的彈性時間。</p>
+                    <p class="content-bgcolorA1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的工作地點是精誠集團—宜誠資訊，地理位置位在台北市松山區復興北路369號3樓，距離中山國中捷運站五分鐘路程，也有很多公車可以抵達，所以交通方面滿多元的算方便，至於生活機能部分，附近也有很多餐廳小吃，所以飲食方面也不成問題相當便捷。上班時間是8:30 ~ 9:30，有一個小時的彈性時間。</p>
+                    <p class="text-center">
+                        <img class="mb-4" src="~/imgs/辦公桌.jpg" width="85%" />
+                    </p>
+                </div>
+                <div id="item2" class=" mb-4">
+                    <p class="h5 mb-4 fw-bold title-styleA1 p-2">二、工作詳述</p>
+                    <br />
+                    <p class=" content-bgcolorA1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我工作實習的部門是系統整合處A，主要是在做數位典藏系統網頁系統的開發以及維護，而我負責的工作項目不固定也很多元，像是1. 按照專案需求進行網站的程式設計與開發， 2. 協助跟進和維護現有網站，3.修復設計無障礙網站。4.協助寫系統操作手冊、測試報告。</p><br /><br />
+                </div>
+                <div id="item3" class=" mb-4">
+                    <p class="h5 mb-4 fw-bold title-styleA1 p-2">三、實習期間完成之進度</p>
+                    <br />
+                    <span class="fw-bolder content-bgcolorA1 fs-5"><i class="fa fa-solid fa-angles-right"></i>實習月份1月中~2月</span><br />
+                    <p class=" content-bgcolorA1">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;寒假剛開始進去基本上對於程式都還很不熟悉，前兩個星期幾乎都在<a class="fw-bold nav-color" href="https://www.codewars.com/dashboard">Codewars</a>和<a class="fw-bold nav-color" href="https://www.freecodecamp.org/">freeCodeCamp</a>網站上練習增加對程式的熟悉度，還有一些前台畫面外觀的撰寫，例如臺灣國家公園網站的翻新、開發國家圖書館前端的頁面等等，加深對Html、CSS、JS熟悉而已。
+                    </p>
+                    <br />
+
+                    <span class="fw-bolder content-bgcolorA1 fs-5 "><i class="fa-solid fa-angles-right"></i>實習月份3月~4月</span><br />
+                    <p class="content-bgcolorA1">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;對程式比較熟悉之後，就開始撰寫系統功能，除了編寫完後台畫面後，也開始練習如何從資料庫連接資料至前端，並且把後台可能會有的功能例如新增、刪除、編輯、查詢等一併建立完成。
+                    </p>
+
+                    <br />
+                    <span class="fw-bolder content-bgcolorA1 fs-5"><i class="fa-solid fa-angles-right"></i>實習月份5月中~6月</span><br />
+                    <p class="content-bgcolorA1">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在五月時，有翻新一個網站為國家圖書館的多媒體創意實驗中心，以往都是只有把外觀
+                        寫好而已，呈現的資料都是固定的，但其實一般網頁呈現都是要根據現有的資料去做改變，因此已經經過了一段時間，對連接資料庫和資料庫語法也有一定的熟悉，除了完成前端外觀，也要用連接資料庫的方式去呈現網頁外觀，這麼一來，如果遇到有些雖然是不同頁面，但都是相同版型只是依照不同的資料去呈現的網站，就只需先刻出一個固定模板再去連接資料庫就好，不用每一頁都需要撰寫前端畫面。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-2">
+            <nav id="navbar-example" class=" flex-column align-items-stretch ">
+                <nav class="nav nav-pills flex-column">
+                    <a class="mb-3 text-decoration-none nav-color fw-bolder" href="#item1">一、工作環境</a>
+                    <a class="mb-3 text-decoration-none nav-color fw-bolder" href="#item2">二、工作詳述</a>
+                    <a class="mb-3 text-decoration-none nav-color fw-bolder" href="#item3">三、實習期間完成之進度</a>
+
+                </nav>
+            </nav>
+        </div>
+
+    </div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+
+</div>
+
